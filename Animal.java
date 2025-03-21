@@ -6,7 +6,16 @@ public class Animal
   private String food;
   private boolean nocturnal;
   private double aveLifeSpan;
-  
+  public Animal(String food, boolean nocturnal,
+              double aveLifeSpan)
+  {
+    this.food = food;
+    this.nocturnal = nocturnal;
+    this.aveLifeSpan = aveLifeSpan;
+  }
+  public Animal()
+  {
+  }
   public void eat() 
   {
     System.out.println("This animal's diet consists of " + food + ".");
