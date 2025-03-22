@@ -7,4 +7,9 @@ public class Primate extends Animal
   {
     System.out.println("The primate forages for food.");
   }
+  public Primate(String food, boolean nocturnal, 
+    double aveLifeSpan) {
+    super(food, nocturnal, aveLifeSpan);
+    System.out.println("A primate arrives.");
+  }
 }

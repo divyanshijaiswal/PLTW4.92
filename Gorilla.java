@@ -7,8 +7,10 @@ public class Gorilla extends Primate
   {
     System.out.println("The gorilla grunts.");
   }
-  public Gorilla()
+  public Gorilla(String food, boolean nocturnal, 
+  double aveLifeSpan)
 {
+  super(food, nocturnal, aveLifeSpan);
   System.out.println("A gorilla arrives.");
 }
 }
