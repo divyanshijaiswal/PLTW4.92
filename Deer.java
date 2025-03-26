@@ -12,4 +12,8 @@ public class Deer extends Hooved
     super(food, nocturnal, aveLifeSpan);
     System.out.println("A deer arrives.");
   }
+
+  public void speak() {
+    System.out.println("");
+  }
 }
