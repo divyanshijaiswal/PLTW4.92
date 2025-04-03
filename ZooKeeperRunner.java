@@ -8,6 +8,8 @@ public class ZooKeeperRunner
 {
   public static void main(String[] args)
   { 
+    
+
   Elephant elephant = new Elephant("leaves, grasses, roots", false, 60.0);
   elephant.trumpet();
   elephant.eat();
@@ -34,23 +36,34 @@ public class ZooKeeperRunner
   owl.hunt();
   Owl owl2 = new Owl("mice,insects", true, 4.0);
   owl2.eat();
+  
+  System.out.println();
+  Animal deer = new Deer();
+  Animal elephanT = new Elephant();
+  Animal giraffE = new Giraffe();
+  Animal gorilla = new Gorilla();
+  Animal monkey = new Monkey();
+  Animal hippO = new Hippo();
 
   ArrayList<Animal> zoo = new ArrayList<Animal>();
 
-  /*
-   * Modify your ZooKeeper program so that it stores animals in an ArrayList and then references them polymorphically to achieve different results depending on the type of the object at runtime.
-Add a speak method to each class (other than ZooKeeperRunner) that calls its appropriate method. For example, the Giraffe’s speak method would call hum.
-Add an ArrayList<Animal> to your ZooKeeperRunner class called zoo.
-Add each type of Animal that has a sound to your zoo.
-Iterate over each Animal. 
-Call each Animal’s speak method.
-Access the speak method using an Animal parameter.
-In your runner class, after the closing curly brace of the main method, create a new method that you can use in main.
-public static void hearTheAnimal(Animal currentAnimal)
-{
-}
-For the method implementation, call the animal’s speak method.
-In your main method, call hearTheAnimal a few times, passing an instance of Animal as a parameter.
-   */
+  zoo.add(deer);
+  zoo.add(elephanT);
+  zoo.add(giraffE);
+  zoo.add(gorilla);
+  zoo.add(monkey);
+  zoo.add(hippO);
+
+  for(Animal animal : zoo) {
+    animal.speak();
+  }
+  System.out.println("\nhearTheAnimal method:");
+  hearTheAnimal(deer);
+  hearTheAnimal(monkey);
+
+  }
+
+  public static void hearTheAnimal(Animal currentAnimal){ 
+      currentAnimal.speak();
   }
 }

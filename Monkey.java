@@ -23,4 +23,15 @@ public class Monkey extends Primate
     super(food, nocturnal, aveLifeSpan);
     System.out.println("A monkey arrives.");
   }
+
+  public Monkey() {
+    System.out.println("A monkey arrives.");
+  }
+
+
+
+  @Override
+  public void speak() {
+    howl();
+  }
 }

@@ -12,4 +12,12 @@ public class Hooved extends Animal
     super(food, nocturnal, aveLifeSpan);
     System.out.println("A hooved arives.");
   }
+  public Hooved() {
+    System.out.println("A hooved arives.");
+  }
+
+  @Override
+  public void speak() {
+    System.out.println("");
+  }
 }

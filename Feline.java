@@ -10,4 +10,12 @@ public class Feline extends Animal{
         System.out.println("A feline arrives.");
 
     }
+     public Feline() {
+        System.out.println("A feline arrives.");
+    }
+
+    @Override
+    public void speak() {
+    growl();
+    }
 }

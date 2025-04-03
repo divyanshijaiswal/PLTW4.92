@@ -12,4 +12,14 @@ public class Hippo extends Hooved
     super(food, nocturnal, aveLifeSpan);
     System.out.println("A hippo arrives.");
   }
+   public Hippo() {
+    System.out.println("A hippo arrives.");
+  }
+
+
+
+  @Override
+  public void speak() {
+    groan();
+  }
 }

@@ -12,4 +12,15 @@ public class Primate extends Animal
     super(food, nocturnal, aveLifeSpan);
     System.out.println("A primate arrives.");
   }
+
+   public Primate() {
+    System.out.println("A primate arrives.");
+  }
+
+
+
+  @Override
+  public void speak() {
+    System.out.println("");
+  }
 }

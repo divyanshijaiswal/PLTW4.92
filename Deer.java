@@ -3,6 +3,7 @@
  */
 public class Deer extends Hooved
 {
+  
   public void grunt()
   {
     System.out.println("The deer grunts.");
@@ -12,8 +13,13 @@ public class Deer extends Hooved
     super(food, nocturnal, aveLifeSpan);
     System.out.println("A deer arrives.");
   }
+  public Deer() {
 
+    System.out.println("A deer arrives.");
+  }
+
+  @Override
   public void speak() {
-    System.out.println("");
+    grunt();
   }
 }

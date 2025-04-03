@@ -7,4 +7,13 @@ public class Lion extends Feline{
         super(food, nocturnal, aveLifeSpan);
         System.out.println("A lion arrives");
     }
+    public Lion() {
+       System.out.println("A lion arrives");
+    }
+
+
+    @Override
+    public void speak() {
+    System.out.println("");
+  }
 }

@@ -12,4 +12,12 @@ public class Penguin extends Animal {
     public Penguin() {
         System.out.println("A new penguin has arrived");
     }
+
+
+
+
+    @Override
+    public void speak() {
+    System.out.println("");
+  }
 }

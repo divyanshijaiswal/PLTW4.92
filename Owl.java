@@ -10,7 +10,13 @@ public class Owl extends Animal{
     System.out.println("A new owl has arrived");
     
 }
-public Owl() {
-    System.out.println("A new owl has arrived");
-}
+    public Owl() {
+        System.out.println("A new owl has arrived");
+    }
+
+
+    @Override
+    public void speak() {
+    System.out.println("");
+  }
 }

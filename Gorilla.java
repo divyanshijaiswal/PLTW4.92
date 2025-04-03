@@ -13,4 +13,14 @@ public class Gorilla extends Primate
   super(food, nocturnal, aveLifeSpan);
   System.out.println("A gorilla arrives.");
 }
+
+ public Gorilla() {
+    System.out.println("A gorilla arrives.");
+  }
+
+
+@Override
+public void speak() {
+    grunt();
+  }
 }

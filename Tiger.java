@@ -12,4 +12,14 @@ public class Tiger extends Feline {
 
     }
 
+    public Tiger() {
+       System.out.println("A tiger arrives.");
+    }
+
+
+    @Override
+    public void speak() {
+    System.out.println("");
+  }
+
 }
